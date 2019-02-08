@@ -3,25 +3,24 @@
 # Mark an item as completed.
 
 class Manager(object):
-    todos = open('todos.txt', 'r')
 
-    def start():
-
-        print("Choose a day you will like to make a plan.")
-        choice = input("")
-        if choice == "Monday":
+    def start(self):
+        todos = open('todos.txt', 'r')
+        print("Welcome! Choose a day you will like to make a plan.")
+        self.choice = input("")
+        if self.choice == "Monday":
             todos.read()
-        elif choice == "Tuesday":
+        elif self.choice == "Tuesday":
             todos.read()
-        elif choice == "Wednesday":
+        elif self.choice == "Wednesday":
             todos.read()
-        elif choice == "Thursday":
+        elif self.choice == "Thursday":
             todos.read()
-        elif choice == "Friday":
+        elif self.choice == "Friday":
             todos.read()
-        elif choice == "Saturday":
+        elif self.choice == "Saturday":
             todos.read()
-        elif choice == "Sunday":
+        elif self.choice == "Sunday":
             todos.read()
         else:
             print("Incorrect spelling")
@@ -33,16 +32,19 @@ class Manager(object):
         #Getting What To Write To File
         text = input("")
         #Actually Writing It
-        todo.write(f"{choice}: {text} \n")
+        todo.write(f"{self.choice}: {text} \n")
         todo.close()
 
-    def read():
+    def read(self):
         print()
         print("These are your plans for the week: ")
         todos = ('todos.txt')
-        if os.path.isfile(todos):
+        if (todos):
             todos = open('todos.txt', 'r')
             print(todos.read())
         else:
             print("Error")
             start()
+
+    def complete(self):
+        print("mark an item as done")

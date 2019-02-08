@@ -1,6 +1,6 @@
-import os.path
 from manager import Manager
 
 app = Manager()
-start()
-read()
+app.start()
+app.read()
+app.complete()
