@@ -6,7 +6,7 @@ from item import Item
 class Manager(Item):
 
     def start(self):
-        todos = open('todos.txt', 'r')
+        todos = open('todos.txt', 'r+')
         print("Welcome! Choose a day you will like to make a plan.")
         global choice
         choice = input("")
@@ -30,13 +30,14 @@ class Manager(Item):
 
     def print_item(self):
 
+
         print()
         todo = open('todos.txt', 'a+')
         print("Type in your new plan! ")
         #Getting What To Write To File
         self.task = input("")
         #Actually Writing It
-        todo.write(f"{choice} {self.timestamp}: {self.task}, {self.completed} \n")
+        todo.write(f"\n{choice} {self.timestamp}: \n Task: {self.task}\n Task done?: {self.completed} \n")
         todo.close()
 
     def read(self):
@@ -52,3 +53,8 @@ class Manager(Item):
 
     def complete(self):
         print("mark an item as done")
+
+        todos = open('todos.txt', 'r+')
+        check_tasks = todos.readlines()
+
+        
