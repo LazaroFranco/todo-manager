@@ -6,10 +6,10 @@ import datetime
 
 class Item(object):
 
-    def __init__(self, task):
+    def __init__(self):
+        self.task = task
         self.timestamp = datetime.datetime.now()
         self.boolean = True or False
-        self.task = task
 
 
 Item()
