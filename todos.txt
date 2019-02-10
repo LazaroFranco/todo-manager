@@ -1,0 +1,10 @@
+Monday: Add me, 
+Monday: Add m 
+Monday: Add me 
+Monday: Add me 
+Monday 2019-02-10 00:03:48.717385: Add me 
+Monday 2019-02-10 00:05:44.542610: Add me, False 
+Monday 2019-02-10 00:07:06.399037: Add me, False 
+Monday 2019-02-10 00:08:01.850902: Add m, False 
+Monday 2019-02-10 00:12:20.721278: Add me, False 
+Monday 2019-02-10 00:13:07.087979: Add me, False 

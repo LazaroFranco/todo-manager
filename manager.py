@@ -1,38 +1,42 @@
+from item import Item
 # Print all of the to-do items in the list.
 # Add a new item to the list.
 # Mark an item as completed.
 
-class Manager(object):
+class Manager(Item):
 
     def start(self):
         todos = open('todos.txt', 'r')
         print("Welcome! Choose a day you will like to make a plan.")
-        self.choice = input("")
-        if self.choice == "Monday":
+        global choice
+        choice = input("")
+        if choice == "Monday":
             todos.read()
-        elif self.choice == "Tuesday":
+        elif choice == "Tuesday":
             todos.read()
-        elif self.choice == "Wednesday":
+        elif choice == "Wednesday":
             todos.read()
-        elif self.choice == "Thursday":
+        elif choice == "Thursday":
             todos.read()
-        elif self.choice == "Friday":
+        elif choice == "Friday":
             todos.read()
-        elif self.choice == "Saturday":
+        elif choice == "Saturday":
             todos.read()
-        elif self.choice == "Sunday":
+        elif choice == "Sunday":
             todos.read()
         else:
             print("Incorrect spelling")
             start()
 
+    def print_item(self):
+
         print()
         todo = open('todos.txt', 'a+')
         print("Type in your new plan! ")
         #Getting What To Write To File
-        text = input("")
+        self.task = input("")
         #Actually Writing It
-        todo.write(f"{self.choice}: {text} \n")
+        todo.write(f"{choice} {self.timestamp}: {self.task}, {self.completed} \n")
         todo.close()
 
     def read(self):
