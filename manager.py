@@ -1,38 +1,52 @@
+from item import Item
 # Print all of the to-do items in the list.
 # Add a new item to the list.
 # Mark an item as completed.
 
-class Manager(object):
+class Manager(Item):
 
     def start(self):
-        todos = open('todos.txt', 'r')
+        todos = open('todos.txt', 'r+')
         print("Welcome! Choose a day you will like to make a plan.")
-        self.choice = input("")
-        if self.choice == "Monday":
+        global choice, date
+        choice = input("")
+        if choice == "Monday":
             todos.read()
-        elif self.choice == "Tuesday":
+        elif choice == "Tuesday":
             todos.read()
-        elif self.choice == "Wednesday":
+        elif choice == "Wednesday":
             todos.read()
-        elif self.choice == "Thursday":
+        elif choice == "Thursday":
             todos.read()
-        elif self.choice == "Friday":
+        elif choice == "Friday":
             todos.read()
-        elif self.choice == "Saturday":
+        elif choice == "Saturday":
             todos.read()
-        elif self.choice == "Sunday":
+        elif choice == "Sunday":
             todos.read()
         else:
             print("Incorrect spelling")
             start()
+        print("Particular Date?")
+        date = input("")
+
+
+    def print_item(self):
+
 
         print()
         todo = open('todos.txt', 'a+')
         print("Type in your new plan! ")
         #Getting What To Write To File
-        text = input("")
+        self.task = input("")
+
         #Actually Writing It
-        todo.write(f"{self.choice}: {text} \n")
+        todo.write(f"""\n On {choice}:
+         Task: {self.task}
+         Task Dated For: {date}
+         Task done?: {self.completed}
+         Task Created on: {self.timestamp}
+         \n""")
         todo.close()
 
     def read(self):
@@ -48,3 +62,6 @@ class Manager(object):
 
     def complete(self):
         print("mark an item as done")
+
+        todos = open('todos.txt', 'r+')
+        check_tasks = todos.readlines()

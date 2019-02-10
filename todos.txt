@@ -1,0 +1,94 @@
+Monday: Add me, 
+Monday: Add m 
+Monday: Add me 
+Monday: Add me 
+Monday 2019-02-10 00:03:48.717385: Add me 
+Monday 2019-02-10 00:05:44.542610: Add me, False 
+Monday 2019-02-10 00:07:06.399037: Add me, False 
+Monday 2019-02-10 00:08:01.850902: Add m, False 
+Monday 2019-02-10 00:12:20.721278: Add me, False 
+Monday 2019-02-10 00:13:07.087979: Add me, False 
+Monday 2019-02-10 00:23:37.666939: Add me, 
+ Task done?: False 
+Tuesday 2019-02-10 00:23:53.544256: Add mee
+ Task done?: False 
+Monday 2019-02-10 00:26:03.781837: Add me
+ Task done?: False 
+
+Monday 2019-02-10 00:26:27.521374: Add me
+ Task done?: False 
+
+Monday 2019-02-10 00:27:23.131612: 
+ Task: Add me
+ Task done?: False 
+
+Monday 2019-02-10 00:59:25.967980: 
+ Task: Add me
+ Task done?: False 
+
+Monday 2019-02-10 01:06:54.362026: 
+ Task: Add me
+ Task done?: False 
+
+Monday 2019-02-10 01:07:50.096356: 
+ Task: Add me
+ Task done?: False 
+
+Monday 2019-02-10 01:09:27.237728: 
+ Task: Add me
+ Task done?: False 
+
+Monday 2019-02-10 01:09:45.495456: 
+ Task: Add me
+ Task done?: False 
+
+Monday 2019-02-10 01:14:05.519949: 
+ Task: Add m
+ Task done?: False 
+
+Monday 2019-02-10 01:15:11.854704: 
+ Task: Add m
+ Task done?: False 
+
+Monday 2019-02-10 01:19:43.855095: 
+ Task: NO
+ Task done?: False 
+
+Monday 2019-02-10 01:21:41.585432:
+        
+ Task: No
+
+         Task done?: False
+         
+
+Monday 2019-02-10 01:22:00.390045:
+        
+ Task: No
+        
+ Task done?: False
+         
+
+Monday 2019-02-10 01:23:56.527690:
+        
+ Task: Add me
+        
+ Task Dated For: This monday
+        
+ Task done?: False
+        
+ Task Created on: 2019-02-10 01:23:56.527690
+         
+
+Monday 2019-02-10 01:24:41.905028:
+         Task: Add me
+         Task Dated For: This Monday
+         Task done?: False
+         Task Created on: 2019-02-10 01:24:41.905028
+         
+
+ On Monday:
+         Task: Add me
+         Task Dated For: This Monday
+         Task done?: False
+         Task Created on: 2019-02-10 01:25:40.401919
+         
