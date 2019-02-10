@@ -49,3 +49,46 @@ Monday 2019-02-10 01:14:05.519949:
 Monday 2019-02-10 01:15:11.854704: 
  Task: Add m
  Task done?: False 
+
+Monday 2019-02-10 01:19:43.855095: 
+ Task: NO
+ Task done?: False 
+
+Monday 2019-02-10 01:21:41.585432:
+        
+ Task: No
+
+         Task done?: False
+         
+
+Monday 2019-02-10 01:22:00.390045:
+        
+ Task: No
+        
+ Task done?: False
+         
+
+Monday 2019-02-10 01:23:56.527690:
+        
+ Task: Add me
+        
+ Task Dated For: This monday
+        
+ Task done?: False
+        
+ Task Created on: 2019-02-10 01:23:56.527690
+         
+
+Monday 2019-02-10 01:24:41.905028:
+         Task: Add me
+         Task Dated For: This Monday
+         Task done?: False
+         Task Created on: 2019-02-10 01:24:41.905028
+         
+
+ On Monday:
+         Task: Add me
+         Task Dated For: This Monday
+         Task done?: False
+         Task Created on: 2019-02-10 01:25:40.401919
+         

@@ -8,7 +8,7 @@ class Manager(Item):
     def start(self):
         todos = open('todos.txt', 'r+')
         print("Welcome! Choose a day you will like to make a plan.")
-        global choice
+        global choice, date
         choice = input("")
         if choice == "Monday":
             todos.read()
@@ -27,6 +27,9 @@ class Manager(Item):
         else:
             print("Incorrect spelling")
             start()
+        print("Particular Date?")
+        date = input("")
+
 
     def print_item(self):
 
@@ -36,8 +39,14 @@ class Manager(Item):
         print("Type in your new plan! ")
         #Getting What To Write To File
         self.task = input("")
+
         #Actually Writing It
-        todo.write(f"\n{choice} {self.timestamp}: \n Task: {self.task}\n Task done?: {self.completed} \n")
+        todo.write(f"""\n On {choice}:
+         Task: {self.task}
+         Task Dated For: {date}
+         Task done?: {self.completed}
+         Task Created on: {self.timestamp}
+         \n""")
         todo.close()
 
     def read(self):
@@ -56,5 +65,3 @@ class Manager(Item):
 
         todos = open('todos.txt', 'r+')
         check_tasks = todos.readlines()
-
-        
